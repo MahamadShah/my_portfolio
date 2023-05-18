@@ -91,7 +91,7 @@
   transition-delay: 0.4s; }
 
 @use 'config';
-.bg-img {
+#bg-img {
   position: relative;
   width: 100%;
   min-height: 100%;
@@ -101,7 +101,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.9; }
-  .bg-img:after {
+  #bg-img:after {
     content: '';
     position: absolute;
     top: 0;
