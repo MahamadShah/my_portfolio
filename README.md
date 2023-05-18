@@ -7,5 +7,5 @@ and run
 # npm run sass 
 in the root folder.
 
-# Link to the view my portofolio below:
+# Link to the view my portfolio below:
 https://mahamadshah.github.io/my_portfolio/
