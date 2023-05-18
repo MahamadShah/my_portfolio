@@ -1,13 +1,31 @@
 // Widescreens
 
 @include mediaXL {
-    
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .logos-gallery {
+      a.img-7,
+      a.img-8,
+      a.img-9 {
+        height: 15rem;
+      }
+    }
   }
   
   // Widescreens
   
   @include mediaLg {
-    
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .logos-gallery {
+      a.img-7,
+      a.img-8,
+      a.img-9 {
+        height: 13rem;
+      }
+    }
   }
   
   // Widescreens
@@ -51,37 +69,74 @@
         height: 150px;
       }
     }
-
+  
     .about-info {
-        grid-template-areas:
-          'bioimage'
-          'bio'
-          'job1'
-          'job2'
-          'job3';
-        grid-template-columns: 1fr;
-        .bio-image {
-          margin-top: 2rem;
-        }
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+      grid-template-columns: 1fr;
+      .bio-image {
+        margin-top: 2rem;
       }
-      .work-experience {
-        grid-template-areas:
-          'job1'
-          'job2'
-          'job3'
-          'job4'
-          'job5'
-          'job6';
-        grid-template-columns: 1fr;
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  
+    .work-experience {
+      grid-template-areas:
+        'job1'
+        'job2'
+        'job3'
+        'job4'
+        'job5'
+        'job6';
+      grid-template-columns: 1fr;
+    }
+  
+    .education {
+      grid-template-areas:
+        'job1'
+        'job2'
+        'job3';
+      grid-template-columns: 1fr;
+    }
+  
+    .website-gallery {
+      grid-template-areas:
+        'img-1'
+        'img-2'
+        'img-3';
+      grid-template-columns: 1fr;
+      a.img-1,
+      a.img-2,
+      a.img-3 {
+        min-height: 25rem;
       }
-    
-      .education {
-        grid-template-areas:
-          'job1'
-          'job2'
-          'job3';
-        grid-template-columns: 1fr;
+    }
+    .posters-gallery {
+      grid-template-areas:
+        'img-4'
+        'img-5'
+        'img-6';
+      grid-template-columns: 1fr;
+    }
+    .logos-gallery {
+      grid-template-areas:
+        'img-7'
+        'img-8'
+        'img-9';
+      grid-template-columns: 1fr;
+      a.img-7,
+      a.img-8,
+      a.img-9 {
+        height: 8.5rem;
       }
+    }
   }
   
   // Widescreens
@@ -89,6 +144,16 @@
   @include mediaSm {
     main#home h1 {
       margin-top: 10vh;
+    }
+    .projects {
+      grid-template-columns: 1fr;
+    }
+    .google-maps {
+      width: 70vw;
+  
+      iframe {
+        width: 70vw;
+      }
     }
   }
   
